@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'io.github.tmessssy.chatgptbackfix'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'io.github.tmessssy.chatgptbackfix'
+        minSdk 28
+        targetSdk 35
+        versionCode 7
+        versionName '1.1.0'
+    }
+
+    buildTypes {
+        release {
+            // Keep class names intact: LSPosed loads io.github.tmessssy.chatgptbackfix.Hook by name (assets/xposed_init).
+            minifyEnabled false
+            // Signed with the debug key so a release APK installs without setting up a keystore.
+            // Swap in your own signingConfig if you ever distribute this.
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    // Provided by LSPosed at runtime. compileOnly = never bundled into the APK (bundling it breaks the module).
+    compileOnly 'de.robv.android.xposed:api:82'
+
+    // Used inside ChatGPT's process to read the accessibility tree's child IDs (a hidden framework method).
+    implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:6.1'
+}

@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // The legacy Xposed API (de.robv.android.xposed:api:82) is NOT on Maven Central or Google.
+        // It used to live on JCenter, which is shut down. This is its official home.
+        maven {
+            url 'https://api.xposed.info/'
+            content { includeGroup 'de.robv.android.xposed' }
+        }
+    }
+}
+
+rootProject.name = 'ChatGPT-Back-Gesture-Fix'
+include ':app'

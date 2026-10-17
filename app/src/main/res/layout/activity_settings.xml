@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/switch_enabled"
+            style="@style/SettingSwitch"
+            android:text="@string/pref_enabled_title" />
+
+        <TextView
+            style="@style/SettingSummary"
+            android:text="@string/pref_enabled_summary" />
+
+        <Switch
+            android:id="@+id/switch_confirm"
+            style="@style/SettingSwitch"
+            android:text="@string/pref_confirm_title" />
+
+        <TextView
+            style="@style/SettingSummary"
+            android:text="@string/pref_confirm_summary" />
+
+        <Switch
+            android:id="@+id/switch_keyboard"
+            style="@style/SettingSwitch"
+            android:text="@string/pref_keyboard_title" />
+
+        <TextView
+            style="@style/SettingSummary"
+            android:text="@string/pref_keyboard_summary" />
+
+        <Switch
+            android:id="@+id/switch_debug"
+            style="@style/SettingSwitch"
+            android:text="@string/pref_debug_title" />
+
+        <TextView
+            style="@style/SettingSummary"
+            android:text="@string/pref_debug_summary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/pref_labels_title"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pref_labels_hint"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <TextView
+            style="@style/SettingSummary"
+            android:text="@string/pref_labels_summary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/footer"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

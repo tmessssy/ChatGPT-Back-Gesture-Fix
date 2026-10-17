@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 108dp adaptive-icon canvas; artwork sits inside the 66dp safe zone (21..87).
+     A window with its sidebar panel filled, plus a back chevron in the content area. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Sidebar panel (filled) -->
+    <path
+        android:fillColor="@color/icon_foreground"
+        android:pathData="M35,32 L47,32 L47,76 L35,76 A7,7 0 0,1 28,69 L28,39 A7,7 0 0,1 35,32 Z" />
+
+    <!-- Window outline -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/icon_foreground"
+        android:strokeWidth="4"
+        android:strokeLineJoin="round"
+        android:pathData="M35,32 L73,32 A7,7 0 0,1 80,39 L80,69 A7,7 0 0,1 73,76 L35,76 A7,7 0 0,1 28,69 L28,39 A7,7 0 0,1 35,32 Z" />
+
+    <!-- Back chevron -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/icon_foreground"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M67.5,45 L59,54 L67.5,63" />
+</vector>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChatGPT Back Gesture Fix</string>
+    <string name="xposed_description">ChatGPT: Back opens the sidebar. Back again closes the app (or asks first).</string>
+
+    <string name="status_active">Module is active in LSPosed. Settings apply on the next back gesture.</string>
+    <string name="status_inactive">Module is not active yet. Enable it in LSPosed (scope: ChatGPT), then reopen this screen. Settings saved now will not reach ChatGPT until then.</string>
+
+    <string name="pref_enabled_title">Enabled</string>
+    <string name="pref_enabled_summary">Back on the main chat screen opens the sidebar.</string>
+
+    <string name="pref_confirm_title">Ask before closing</string>
+    <string name="pref_confirm_summary">With the sidebar open, Back shows a \"Close app?\" prompt. Turn off to close immediately.</string>
+
+    <string name="pref_keyboard_title">Keep keyboard closed on open</string>
+    <string name="pref_keyboard_summary">Stops ChatGPT from popping the keyboard up by itself when it opens. Tapping the message box still opens it.</string>
+
+    <string name="pref_debug_title">Debug logging</string>
+    <string name="pref_debug_summary">Logs every back decision and the on-screen labels to LSPosed logs. Use this if the sidebar button is not being found.</string>
+
+    <string name="pref_labels_title">Extra sidebar button labels</string>
+    <string name="pref_labels_summary">Only needed if debug logs show the sidebar button uses a label the module does not recognize. Comma separated, not case sensitive.</string>
+    <string name="pref_labels_hint">e.g. open sidebar, chat history</string>
+
+    <string name="footer">After enabling the module or updating it, force stop ChatGPT once so it reloads.</string>
+</resources>

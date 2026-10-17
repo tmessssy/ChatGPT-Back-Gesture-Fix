@@ -1,3 +1,4 @@
+App Idea created out of first-hand frustration, App Created with Claude
 # ChatGPT Back Gesture Fix (LSPosed module)
 
 Fixes back-gesture navigation in the ChatGPT Android app (`com.openai.chatgpt`):
